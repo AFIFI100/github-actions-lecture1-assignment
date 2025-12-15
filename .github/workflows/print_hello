@@ -1,0 +1,19 @@
+name: print hello world in three different shell
+on: 
+  push:
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello world in bash shell
+        run: echo "hello world from bash"
+        
+     steps:
+      - name: print hello world in sh shell
+        shell: sh
+        run: echo "hello from sh"
+        
+    steps:
+      - name: print hello world in zsh shell
+        shell: zsh
+        run: echo "hello from zsh"
