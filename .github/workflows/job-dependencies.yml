@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Run Job A
         run: echo "Run Job A"
-  job-B:
+  job_B:
     runs-on: ubuntu-latest
     steps:
       - name: Run Job B
@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Run Job C after job A
         run: echo "Run Job C after job A"
-  job-D:
+  job_D:
     runs-on: ubuntu-latest
     needs: Job_B
     steps:
